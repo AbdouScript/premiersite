@@ -16,15 +16,13 @@
 
 <body>
   <!------Debut NAV-------->
-  <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-light bg-secondary fixed-top">
     <a href="#"><i class="spacer fas fa-handshake text-light fa-3x"></i></a>
     <button type="button" class="navbar-toggler bg-light" data-toggle="collapse" data-target="#nav">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse justify-content-evenly" id="nav">
       <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link text-light font-weight-bold text-uppercase px-3" href="#">Accueil</a>
-        </li>
         <li class="nav-item"><a class="nav-link text-light font-weight-bold text-uppercase px-3" href="#">Faire un
             devis</a></li>
         <li class="nav-item dropdown"><a class="nav-link text-light font-weight-bold text-uppercase px-3"
@@ -38,12 +36,12 @@
         <li class="nav-item"><a class="nav-link text-light font-weight-bold text-uppercase px-3" href="">Mon
             histoire</a></li>
         <li class="nav-item"><a class="nav-link text-light font-weight-bold text-uppercase px-3" href="">Equipe</a></li>
-        <li class="nav-item"><a class="nav-link text-light font-weight-bold text-uppercase px-3" href="">Contacte</a>
+        <li class="nav-item"><a class="nav-link text-light font-weight-bold text-uppercase px-3" href="#contact">Contacte</a>
         </li>
       </ul>
       <form class="form-inline ml-3">
         <div class="input-group">
-          <input type="text" class="form-control" placeholder="Search"/>
+          <input type="text" class="form-control" placeholder="Search" />
           <div class="input-group-append">
             <button type="button" class="btn bg-light"><i class="fas fa-search text-muted"></i>
             </button>
@@ -53,38 +51,127 @@
     </div>
   </nav>
   <!------Fin NAV------>
-  
+
   <!------Banniere------>
   <section>
     <div class="container-fluid">
-      <div class="row bg-success justify-content-center align-items-center" style="height:100vh">
-      <div class="col-sm-10 text-center">
-        <h1 class="display-2 text-capitalize text-warning">Mon cordonnier</h1>
-        <h2 class="font-weight-light font-italic text-light">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Doloribus!
-        </h2>
-        <a href="#" class="btn btn-warning btn-lg px-4 m-2">Contactez-nous</a>
-        <a href="#" class="btn btn-danger btn-lg px-4 m-2">Rejoingnez-nous</a>
+      <div class="row bg-secondary justify-content-center align-items-center" style="height:100vh">
+        <div class="col-sm-10 text-center">
+          <h1 class="display-2 text-capitalize text-warning mt-5">Mon cordonnier</h1>
+          <h2 class="font-weight-light font-italic text-light">
+            Bienvenue dans la cordonnerie de Garches <br>
+            Découvrez nos dernières tendances !
+          </h2>
+          <a href="#ccm" class="btn btn-warning btn-lg px-4 m-2 mt-5">Comment ça marche</a>
+          <a href="#contact" class="btn btn-danger btn-lg px-4 m-2 mt-5">Contactez-nous</a>
+        </div>
       </div>
-    </div>
     </div>
   </section>
   <!------Fin Banniere------>
 
-  <!-- Optional JavaScript; choose one of the two! -->
-  <!-- Option 1: Bootstrap Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
+  <!------Comment ça marche------>
+  <section id="ccm" class="bg-secondary p-5">
+    <div class="container-fluid">
+      <div class="row mb-4">
+        <div class="col text-center">
+          <h1 class="text-warning display-2">Comment ça marche</h1>
+          <p class="lead text-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        </div>
+      </div>
+    </div>
+    <!------Fin du titre------>
+    <div class="row text-center">
+      <div class="col-lg-4">
+        <i class="fas fa-copy text-warning fa-5x mb-3"></i>
+        <h1 class="text-light">J'effectue mon devis</h1>
+        <p class="text-light my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate amet ex cupiditate
+          incidunt eum autem, nostrum deleniti adipisci vitae voluptatem voluptatum voluptatibus ipsam. Dignissimos
+          pariatur autem deserunt voluptates eaque nihil!</p>
+        <a href="#" class="btn btn-outline-warning">En savoir plus</a>
+      </div>
+      <div class="col-lg-4">
+        <i class="fas fa-truck text-warning fa-5x mb-3"></i>
+        <h1 class="text-light">J'envoie mon article</h1>
+        <p class="text-light my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate amet ex cupiditate
+          incidunt eum autem, nostrum deleniti adipisci vitae voluptatem voluptatum voluptatibus ipsam. Dignissimos
+          pariatur autem deserunt voluptates eaque nihil!</p>
+        <a href="#" class="btn btn-outline-warning">En savoir plus</a>
+      </div>
+      <div class="col-lg-4">
+        <i class="fas fa-box-open text-warning fa-5x mb-3"></i>
+        <h1 class="text-light">Je le récupère en toute sécurité</h1>
+        <p class="text-light my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate amet ex cupiditate
+          incidunt eum autem, nostrum deleniti adipisci vitae voluptatem voluptatum voluptatibus ipsam. Dignissimos
+          pariatur autem deserunt voluptates eaque nihil!</p>
+        <a href="#" class="btn btn-outline-warning">En savoir plus</a>
+      </div>
+    </div>
+  </section>
+  <!------Fin Comment ça marche------>
 
-  <!-- Option 2: Separate Popper and Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-    crossorigin="anonymous"></script>
+  <!------Contact------>
+  <section id="contact" class="bg-secondary p-5">
+    <div class="container-fluid">
+      <div class="row mb-4">
+        <div class="col text-center">
+          <h1 class="text-warning display-2">Contactez-nous</h1>
+          <p class="lead text-light">7 avenue du maréchal Leclerc 92380 Garches</p>
+          <p class="fas fa-phone lead text-light"> 01 47 01 12 71</p><br>
+          <p class="fas fa-check-square lead text-light "> 8h30-12h30</p><br>
+          <p class="fas fa-window-close lead text-light "> 14h30-19h30</p>
+        </div>
+      </div>
+    </div>
+    <!------Fin du titre------>
+    <div class="row justify-content-center">
+      <div class="col-lg-6">
+        <div class="text-center text-light">
+          <h2>Une question ?</h2>
+          <p>Ecrivez votre message.</p>
+        </div>
+        <form class="text-light">
+          <div class="form-group">
+            <label for="name">Nom</label>
+            <input type="text" class="form-control" id="name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email">
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea type="message" class="form-control" id="message" rows="5"></textarea>
+          </div>
+          <section id="contact" class="bg-secondary p-2">
+            <div class="container-fluid">
+              <div class="row mb-4">
+                <div class="col text-center">
+              <button class="btn btn-warning btn-block mt-2" type="submit">
+                Envoyer le message
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!------Fin de Contact------>
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"></script>
 
 </body>
 
